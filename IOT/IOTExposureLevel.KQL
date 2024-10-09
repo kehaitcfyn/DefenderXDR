@@ -1,0 +1,11 @@
+DeviceInfo
+| where DeviceCategory =~ "iot"
+| where OSPlatform != "macOS"
+| where ExposureLevel != "Low"
+| where ExposureLevel != "None"
+| summarize arg_max(Timestamp, *) by DeviceId
+| join kind=inner ( DeviceNetworkInfo ) on DeviceId
+| extend ConnectedNetworks_0_Name = parse_json(ConnectedNetworks)[0].Name
+    | extend IPAddresses_0_IPAddress = parse_json(IPAddresses)[0].IPAddress
+    | summarize arg_max(Timestamp, *) by DeviceId
+| project Timestamp,DeviceName,ExposureLevel,IPAddresses_0_IPAddress,OSPlatform,OSVersion,DeviceType,Model,Vendor
