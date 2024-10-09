@@ -1,0 +1,6 @@
+let databaseports = dynamic([1433, 1434, 1583, 3050, 3306, 3351, 5432,443,80,20,21,22]);
+DeviceNetworkEvents
+| where ActionType == "ListeningConnectionCreated"
+| where LocalPort in (databaseports)
+| summarize OpenPorts = make_set(LocalPort), TotalOpenDatabasePorts = dcount(LocalPort) by DeviceName,InitiatingProcessCommandLine,InitiatingProcessVersionInfoProductName
+| sort by TotalOpenDatabasePorts

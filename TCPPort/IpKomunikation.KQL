@@ -1,0 +1,6 @@
+let targetIPs = dynamic(["x.x.x.x", "x.x.x.x"]);  // change
+DeviceNetworkEvents
+ | where Timestamp >= ago(24h) 
+ | where Protocol == "Tcp"
+| where RemoteIP in (targetIPs)
+| project Timestamp, DeviceName, ActionType, RemoteIP, RemotePort, LocalIP, LocalPort, InitiatingProcessFileName, InitiatingProcessSHA256, Protocol
