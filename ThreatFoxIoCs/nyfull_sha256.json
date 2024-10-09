@@ -1,0 +1,2459 @@
+﻿[
+    {
+        "ioc":  "face46e6593206867da39e47001f134a00385898a36b8142a21ad54954682666",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.matanbuchus",
+        "malware_printable":  "Matanbuchus"
+    },
+    {
+        "ioc":  "7f66770624e2d4bd51029a71cf7311cb873ee6fff6a694e4235577d0322a9937",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.matanbuchus",
+        "malware_printable":  "Matanbuchus"
+    },
+    {
+        "ioc":  "http://182.126.80.216:54478/Mozi.m",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "elf.mozi",
+        "malware_printable":  "Mozi"
+    },
+    {
+        "ioc":  "http://117.247.30.17:53875/Mozi.m",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "elf.mozi",
+        "malware_printable":  "Mozi"
+    },
+    {
+        "ioc":  "https://ggoryo.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "ggoryo.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://ggoryo.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://ggoryo.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://ggoryo.com/trade/da.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "vhsuprimentos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "rrcontr.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "rhsp.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "rhinvestimentos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "ivesconstrutora.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "llfusoes.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "comercialgoulart.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "admjulianaduarte.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "admhugoandrade.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "vorlla.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "rvlocacoes.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "passeadv.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "armzemcompras.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "lojacoutinho.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "https://ethscanold.com/ex_ewq1/2e.exe",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.lumma",
+        "malware_printable":  "Lumma Stealer"
+    },
+    {
+        "ioc":  "98628f7208f2c38b38cc6bf74e501c23be19e4160bd0fbb5c0fc3ef05c84f2fb",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://www.leankitchenco.com/",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "xin.shades.whatisaweekend.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://souguru.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "souguru.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://souguru.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://souguru.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://souguru.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "77.232.36.155:443",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "ip:port",
+        "ioc_type_desc":  "ip:port combination that delivery a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://robotprintmoney.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "robotprintmoney.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://robotprintmoney.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://robotprintmoney.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://robotprintmoney.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tratoragricola.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "tratoragricola.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tratoragricola.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tratoragricola.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tratoragricola.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "srftjwrty6kew.shop",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "d21m87a.mom",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "http://180.94.33.253:48035/Mozi.m",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "elf.mozi",
+        "malware_printable":  "Mozi"
+    },
+    {
+        "ioc":  "yaseraljazeera.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "ams82.mom",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "11f98be1f2418783aec952a9814bbe8c26010554c2662671ab4b18f7e425b4b6",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "2664862a4f87e91f92f17a26e6d0b0505db5a92720f2d7eb703e0f55a88eec3f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.nimgrabber",
+        "malware_printable":  "NimGrabber"
+    },
+    {
+        "ioc":  "e3eab8ee534e254cdd647d8c7b34f03fd7218c30f5a2c40a6342d1b402d438a3",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "2e0ccd8d3ca72b4322294b5b3fbead5d454da524b1fe87bd5687ef00481f7bfe",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.meduza",
+        "malware_printable":  "Meduza Stealer"
+    },
+    {
+        "ioc":  "8d43c698222164b663d8bcf46eaa82947a7df712984570472eb31f81bf167c9e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.nimgrabber",
+        "malware_printable":  "NimGrabber"
+    },
+    {
+        "ioc":  "5d887dd72893e3bd40b291a1dc3ea2bc94f6d0daf4de318bd1005b57fbe114ca",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.nimgrabber",
+        "malware_printable":  "NimGrabber"
+    },
+    {
+        "ioc":  "c5254b723efec819e2b470716f45de3bfd929b90eb9957b4a7f4b55158db2dc2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "f78a5d3716dcf0b473feec0ad2e0cc8b8bd98f94e06d902ac82bc0ddcceb8b61",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "882a455f3229947a48a9ffc328c920705f548c41ee75dbfab2522bfbf0dd6f45",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.socks5_systemz",
+        "malware_printable":  "Socks5 Systemz"
+    },
+    {
+        "ioc":  "94c822dcb825596cb607633e0cd9623a657313b9ab1c9f06fc86bc83058c41e9",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.cryptbot",
+        "malware_printable":  "CryptBot"
+    },
+    {
+        "ioc":  "65872d1d1b8cbcf049dc49a328e9b6723eeb79fcb2e23e40d3159cf80756e33f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "e5f2517a0e0f0ed1b8bd6b23f6ed7163fe3bc3e290f93a50cd6e01f5a7c73385",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.remcos",
+        "malware_printable":  "Remcos"
+    },
+    {
+        "ioc":  "6fe8d5c41a41255c157055ce84de6edfa25a518c0224cd29eac442501bc6d482",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.remcos",
+        "malware_printable":  "Remcos"
+    },
+    {
+        "ioc":  "9b100312739e9f463f97d8c2732363f2cc77235432d9ffe25fb98c7484890b24",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.remcos",
+        "malware_printable":  "Remcos"
+    },
+    {
+        "ioc":  "2366a51964cf07dce33137ab711dfd484b9ff2c78fd2295317cf6b44587e9a59",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "32058aa91a7e956ae9b48f8ef08ed82c35063d4443d018369c45822da3c9ba03",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "66bf80970ec16ffb51a31da162bf49dd7ef0f1c0575c00d0db4e4d1786c0ef97",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "7861c46cbb414dbcc6aa51977b94c3532391afa08aaa9907f865e51eb95422b0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.sigloader",
+        "malware_printable":  "SigLoader"
+    },
+    {
+        "ioc":  "bbb94d8f62a597fececf878c85e3f39decad2a1a6426e3ea7483db99e1c3496d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.cryptbot",
+        "malware_printable":  "CryptBot"
+    },
+    {
+        "ioc":  "1431ce9c360abe3d196c4dc67af5bb5e77bbd09740ca59189b839b2cf90d0e25",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "5c52c975d32a22b66da21340558d215d1daf9fc2e39d6d0c471472e34e4032cf",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "5b299dae5fb92bdc350c7fe1b3241fcdee0dd72c76e8807482d904861b871b51",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.luca_stealer",
+        "malware_printable":  "Luca Stealer"
+    },
+    {
+        "ioc":  "9c62b127d6790b9b7957057a75441bc1a4e5eaf4f5c6c2669e833154739adb00",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "cae15eb4334c0d36ed9152d852766f970df9a0159895050742ca1036d54b0c37",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.socks5_systemz",
+        "malware_printable":  "Socks5 Systemz"
+    },
+    {
+        "ioc":  "19d99ec0ddb2d19d37be29cd8bb5b2d3321202bc3109faeab45225f8dca07943",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "75473bded8df420c79611dcc7bd9cc71171637f4b45d83937c49595fc0d6bcfa",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.meterpreter",
+        "malware_printable":  "Meterpreter"
+    },
+    {
+        "ioc":  "ce209f3d13d606d390a323bee0d88d7f3b61deca5b3d0cc7411fdb13d0689bed",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "3d66fed04c76d055c6149b33dcfda544b509c57087c57a861e1d6256b59f8465",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "67149331320cd98dc62e08a55fb8033261d9c6cc76a51744db45fa7247104f44",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "17bf4aec064adbe41df0191e1f0463bcfb43227d5b2ea91fbc386af9690c8cbc",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "7bca75b5cf95e8616ae01efbbfe5873e342181b260664ad006e0e2d055b7aed8",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "d6b68928361ae07d5048c8b126efe974f22bf8b311de2d2faee50f18bd28ab9c",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.njrat",
+        "malware_printable":  "NjRAT"
+    },
+    {
+        "ioc":  "97af0dc504185e8e7bf67ec8b31b7d14a595a6874ebc250982d9359a1d8669b2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "c17f913d54daa4fc678b281988d2b6997ea93b6bd277bab6c3e222f60065887b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.remcos",
+        "malware_printable":  "Remcos"
+    },
+    {
+        "ioc":  "3d826ab9e437cd57919828b0ebe59e13d52bf6470dd3654977d22f3fd04ab44e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "http://95.164.17.212/BEST.msi",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.brute_ratel_c4",
+        "malware_printable":  "Brute Ratel C4"
+    },
+    {
+        "ioc":  "ekcdn.top",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.brute_ratel_c4",
+        "malware_printable":  "Brute Ratel C4"
+    },
+    {
+        "ioc":  "hit-check.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "http://hit-check.com/test_gate0117.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "https://yaseraljazeera.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://yaseraljazeera.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://yaseraljazeera.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://yaseraljazeera.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "ebe1c0171b67a1fa9bc739ecedefb4f3b78f409bfd50a50adad8a13c7d65b32f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "8676871f8bbd1cb90e314eaa8f8a16c598289e8cea9ffca4050d9cb5a85edc2a",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "28637cdb78354b4275c9ab7c7383e18d7735d195937861cab26092fc80ab7797",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "5b28e872a0b3d9d1d93c147def90a926399ac90a43718b24d104b04dfe589fd2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "812d825e9bf55dd363eb84972fb1ca333236b2adc2e6c451124d7e8994cfc7d0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "27d5207d649ef2e091efce2af0d3a74ae771ad9ca64e9b7ac687d28bfdcd5afd",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "58badbaf6da76aff125ec6e98c4ea5b9e2910c3f954384cc127ea681633cfa26",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "c942c65b0db11adce8f7bded91a98d91e9c236a47cab99ea49d89acdb020c734",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "1f0a0a605b06a2536f8ed6cfd666c21dd37fae64a04ee2f6ebc3957cbf58dda5",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "1602325d55a3537877b0a08c80dfd34f69a12b08d10af3b5aec5479fac779283",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.sigloader",
+        "malware_printable":  "SigLoader"
+    },
+    {
+        "ioc":  "a327355ae6e99929d1303a762ea8a936d8e4884f45d683de08dba6882c1c016d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "fa8e8dfb272f18daaece8b6ac3f9d6b16f9484764aff1005c9096909d75f760d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.vidar",
+        "malware_printable":  "Vidar"
+    },
+    {
+        "ioc":  "d2468351514e5bec2f61f6d6259d9cec52cb10e439ee4737bbc99843ac29166f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "416ced775aa32f7bd019fb1c4d8aa8979c355a404a0a49875ecdd01bf7a09cd1",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "91d2d1f06cc3bec9e6169193a169e95ccb7b956919e1d8be06c286b638a54a3d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "d190a678eb326a4becab7bb001e415d9e33b669002210f990d35bf9f238ab8f7",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.cryptbot",
+        "malware_printable":  "CryptBot"
+    },
+    {
+        "ioc":  "c622f33a207272c3c91156b6eea2ff92b03a4bb41b795a580293024b43f3cd3f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.cryptbot",
+        "malware_printable":  "CryptBot"
+    },
+    {
+        "ioc":  "597888323e392b3c1aff627922f3802e263cea86b01449e421a5bf4f40d8e116",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.cryptbot",
+        "malware_printable":  "CryptBot"
+    },
+    {
+        "ioc":  "f9421fce4c56980bfe98bd9f406d772ab4e404478fbcf22207b9fcecdb232bdc",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "c2b7e6349a6a723f25ce5c2672e4950c00d6634bb62f377cadb8c6e4f7b136cf",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.luca_stealer",
+        "malware_printable":  "Luca Stealer"
+    },
+    {
+        "ioc":  "c9064e192865e9f274a214339151cdb1842cd635f14ce491e3f3d177466ab8a0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "9e12b0e0ec0101e6fcb4c10e1b5958e534f937dfdc9394b2095b06f29d22867f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.luca_stealer",
+        "malware_printable":  "Luca Stealer"
+    },
+    {
+        "ioc":  "5f9a7f6a183b3966e84173f3ea7fec1ed563e9cd08577d87d523d9f69f66eb8d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.agent_tesla",
+        "malware_printable":  "Agent Tesla"
+    },
+    {
+        "ioc":  "797b58eb15a41e4afea788e4bff6d0ebe57af68a9db7c06fff0420e8adb0da96",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.meduza",
+        "malware_printable":  "Meduza Stealer"
+    },
+    {
+        "ioc":  "d9a9d938d970b7d5c2c5b5ed740da997cf80122e4eab78123c2dd75a083a52db",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "e6fd0c30073e6dc96d0a436e05345c9c4b68f86dcaad99cd04ebd61957ffa80b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.metastealer",
+        "malware_printable":  "MetaStealer"
+    },
+    {
+        "ioc":  "d25b36287ada269b8149bcfed2694f271b811ef247d8d29fd22fa12dc0ab858e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "920e6f84332a744cafb917f6e94356e1fd247bec36d85b06f8a7b80a942c5b96",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.nimgrabber",
+        "malware_printable":  "NimGrabber"
+    },
+    {
+        "ioc":  "9ad1f09177187c35a409e384df197d323bf44606d7d299066df94e8d890ef127",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "6536e7f196e43cf1b92ebc7f84f99747ffa397c9f749918e5c03b75390e06a79",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.quasar_rat",
+        "malware_printable":  "Quasar RAT"
+    },
+    {
+        "ioc":  "791d92ffb559abed9ec0f3266f5e0f2a98a5af1fab714f0b3b1b2548f05ca8b0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "132d4d7f1635c8c0a5bc723e1bee6d2475cce461fefad80f07d74ad1fbd12357",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "c3ed38a774cd82b861a499e1a619007403c7c7ab5eeb173bf09dd9219a8366f0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "11892dbe32cebd618deb6dc36477829ef9fb8181d7ec887408f44c08bb5f675b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.rhadamanthys",
+        "malware_printable":  "Rhadamanthys"
+    },
+    {
+        "ioc":  "ddad2801522370c2ca5c4ec41663b36a88ef6be171867f23f084c0fa6ecb1055",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.krakenkeylogger",
+        "malware_printable":  "KrakenKeylogger"
+    },
+    {
+        "ioc":  "4b922049e6d164273c8a65da6c31e1f41e1e0a5d821a7aab0fb512e14906dfc9",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.luca_stealer",
+        "malware_printable":  "Luca Stealer"
+    },
+    {
+        "ioc":  "2fadb372bbb6f6cef44abea8b49ee00afbd6a8dec23ff0a423697a149d94b2d7",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "40122c3fc307277bbcb516dce390f74f27e2f798cb351a692f820ba7d3ffd735",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "643a505fefdbf1f0fa9915550a75b2b739aba1683858f92f332c9585c838690d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.sigloader",
+        "malware_printable":  "SigLoader"
+    },
+    {
+        "ioc":  "883cd6bc778f914d4f19fc3d70fbf5da5bf5e65c8d7f08bb7b5a85eaa80bdd9b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "5f51bf583798f714b2c84e3b6ba30b32b15a12ac308a52efbc950ae406216ad8",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.ave_maria",
+        "malware_printable":  "Ave Maria"
+    },
+    {
+        "ioc":  "a834be6d2bec10f39019606451b507742b7e87ac8d19dc0643ae58df183f773c",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "368e60e8ff618e4895c7cea7df5d81cccbeff24bb448332198ab12a065c07c0b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "de7741a1b4e38e18f595621651df024e56db034c692190b5b6115d2b4b1033cb",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "f84e05c4ae4782ddf3f489874b66aeba2e4c4de92d1eeb2765940909e3b9d8f6",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.webmonitor",
+        "malware_printable":  "WebMonitor RAT"
+    },
+    {
+        "ioc":  "5a227bf354dbad129be8c6e1b82eca5bbe6f27587a522fd5fa9e30bdd61b8618",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "9a8e075e4a469d08ef7be25024d178c30015e97ab8af1761ebc82f30652d43b5",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.asyncrat",
+        "malware_printable":  "AsyncRAT"
+    },
+    {
+        "ioc":  "97a6331239d451d7dfe15bfe17de8b419df741ae68bacd440808f8b8d3f99b8a",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.lazarloader",
+        "malware_printable":  "LazarLoader"
+    },
+    {
+        "ioc":  "c1af8de0dbb010738eacb3fa66d5c3f1ea70ce1c480ac116ccd6bbfec781b1d1",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "51561818e5a753c118dd3d88b3682894b5c7dafbba301aa68ce0666f5e6f5219",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "12db50d8781fb72163f2cc3eb674b94558050eb9e965c02ea8936ed1770ca298",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "d075bbba29912ff7a321ee5dcb32159b9de8e27e716a1aad9ed52bb9d9ccc4a3",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "4942ff94e613e09ebaada37b5d61a9b08459fcef987303c8dce1fd10868825ac",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "75e9d83e734f70de74b22032c01c7adee9bc2b0244ab7506bc59c5adc27d81a6",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "e569fac35f99fc61e42ca247768a08a3132a7555d80142c74ec6c80891f0fdce",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "9196f158487cc167f53a2cc62cdb6fc1e31d398962f279f7a3dc4e154e2c0158",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.luca_stealer",
+        "malware_printable":  "Luca Stealer"
+    },
+    {
+        "ioc":  "cf21fb03a80919c2814bbce68ecd34edf09da23e521aeb00b9dce71199ed78cf",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "6d96e38e64fcd764716f7a7d2c6c91926d81425e9859012f351352b1bf5c78b0",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "9e857e6656ff0d6da789faa05f9fb49c323bdcea03b0b7887bbac919122f32fb",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "cfdb0092d5a19db30d909d1cc1d883d441645e8b1641d9702a7cc7b1e78a4fb2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.agent_tesla",
+        "malware_printable":  "Agent Tesla"
+    },
+    {
+        "ioc":  "8c71df132e0ef047762c84c871507eae43b334c24502ce36e72f0c2dbc6acd0c",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "02abb1d01386d7d7ffd8debc2c0fb09baebb82d88b8f758e4de3f0deaaecfbf9",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "abfb108ffb2021d7851e2908a6ebf23b507aa2cbf36628f9f30b9eada587de96",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.agent_tesla",
+        "malware_printable":  "Agent Tesla"
+    },
+    {
+        "ioc":  "https://jerescarla.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "jerescarla.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "pullride.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.vidar",
+        "malware_printable":  "Vidar"
+    },
+    {
+        "ioc":  "https://jerescarla.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://jerescarla.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://jerescarla.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://md928zs.shop/endpoint",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "https://skiiin.club/",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "skiiin.club",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.clearfake",
+        "malware_printable":  "ClearFake"
+    },
+    {
+        "ioc":  "https://shaoriffandco.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "shaoriffandco.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://shaoriffandco.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://shaoriffandco.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://shaoriffandco.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "64.49.14.120:80",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "ip:port",
+        "ioc_type_desc":  "ip:port combination that delivery a malware payload",
+        "malware":  "elf.bashlite",
+        "malware_printable":  "Bashlite"
+    },
+    {
+        "ioc":  "tecstify.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tecstify.com/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tecstify.com/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tecstify.com/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://tecstify.com/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "newfutureapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "pureactiveapps.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "purestarapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "saveactiveapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "savestarapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "sendactiveapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "webactiveapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "webfutureapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "bestactiveapps.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "cleanactiveapps.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "elitestarapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "grandactiveapp.monster",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "185.150.162.32:443",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "ip:port",
+        "ioc_type_desc":  "ip:port combination that delivery a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "2.58.56.158:443",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "ip:port",
+        "ioc_type_desc":  "ip:port combination that delivery a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "cracksoftwaresdownload.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "desktopsofts.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "digitalassetkit.net",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "fbmypages.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "pc-softs.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "pc-software-free-crack.pro",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "pc-software.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "playrankers.comcrep1x",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "software-download-free.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "cracked-software-download-pc.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "cracked-software-for-pc.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "cracked-software.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "cracked-sofware-for-pc.xyz",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "win.danabot",
+        "malware_printable":  "DanaBot"
+    },
+    {
+        "ioc":  "https://bitbucket.org/89999999999999/acaaaaaaaaa/downloads/dsadsdsadsadsa.txt",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.xworm",
+        "malware_printable":  "XWorm"
+    },
+    {
+        "ioc":  "http://pastebin.com/raw/V9y5Q5vv",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.xworm",
+        "malware_printable":  "XWorm"
+    },
+    {
+        "ioc":  "https://firebasestorage.googleapis.com/v0/b/rodriakd-8413d.appspot.com/o/Pe%2Fp.txt?alt=media\u0026token=a7402e30-731b-402a-ab65-b4ffbdbe890d",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.xworm",
+        "malware_printable":  "XWorm"
+    },
+    {
+        "ioc":  "e8288975bc82d4c0aa7f7e08b045c1a59259197426d0c2c09b7cc5220413e4ab",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "ea80978610d6adc205715c9ec31c63488ccbdc52126a36d803d2f43915c5ebff",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "d3a0cf879f8103dd2381d474e876762d6b82616992a4fb7ac86fbb4215486e00",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "216a89d7b6ed72c94dedb03eff7dfc83245c3aadb99e76d21c9c722d2fc9fbbc",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "699b2f65e20546369d24d5c6d291d55f5fd7a78e96257fc40fa5a750ef2f1ccc",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.socks5_systemz",
+        "malware_printable":  "Socks5 Systemz"
+    },
+    {
+        "ioc":  "5a0f5258d3f90db784b6d43565d0fd74579b162c683b72d41cc070bd8a7b1e41",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "884c0261a0c4ff07790fa549a0dc1d752bd97ef3e0635536193c585a291a7281",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.krakenkeylogger",
+        "malware_printable":  "KrakenKeylogger"
+    },
+    {
+        "ioc":  "368305c8a62f4edc3ab1b94d1242e5438b7d7c14a6c65f7beb4aad32b1984821",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.krakenkeylogger",
+        "malware_printable":  "KrakenKeylogger"
+    },
+    {
+        "ioc":  "d06eb6963064af04b5249b6e488fbd53cf97dd09a4d18144560488df9f473db7",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.agent_tesla",
+        "malware_printable":  "Agent Tesla"
+    },
+    {
+        "ioc":  "c6789cf795ae3fb1084f4eec8b4cbea4f5b345df502738b2b7afc5bcfa47a852",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "7827cb2f5612e55d7cac0e098e26871452a4aebb777033361f0442e3f433be58",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "7d258e698da802f51a0a7d52be9ee357be3f16969f7a61d541ed65387a5c419e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "1acc37406e4e59e0d66c8f3194807d37e59df518acc93f5703a53cd74f678f1b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "f29db362c82effbf74d8cb1bc7fd7090183ccc53c62085b9d5b4f3f91eea4b50",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "4e11fd9ebcd710646c1c685691837f3e2d4983e9232279ece12a6db9be569ba1",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.remcos",
+        "malware_printable":  "Remcos"
+    },
+    {
+        "ioc":  "c678014ae9b81c9d4cebe19c6c3f1389d3a94fc9d3501c7671e1c2bbfadc87a2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "5553cc200a950f5684330d3cd65bd89a88efaede9b6d04f0b061e1a51e8db140",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "ab1a43c5eb5c82a3199a543deb4e3289c9fa0a2439e2f962c6774772227e5cdf",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.agent_tesla",
+        "malware_printable":  "Agent Tesla"
+    },
+    {
+        "ioc":  "3bff2bb06222cd5f927f35ebd759e2a1a2c4e334ee907748e159ad8e5af7a40e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.screenlocker",
+        "malware_printable":  "ScreenLocker"
+    },
+    {
+        "ioc":  "0f29f9bc5ceb4045626862436a2a03310df879e32bb78b20fc1fa83d0fc673b4",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "c316a5deb9e9a5314e503543831cec7f1987c935ba301d214ad438ab436d8476",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "1b621eb6ee7bcda09947de50eaf562020f5edb858d82f8d852dc67265f7e74c1",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "acbf2913aa4a2385d29179f5a9c0add2fff6bb34adab4669d02793a5c1317cc9",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "a01200a5fdda2e012ca18c8971dafe8097c371beebdbbcd94a4c75590857d303",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.mars_stealer",
+        "malware_printable":  "Mars Stealer"
+    },
+    {
+        "ioc":  "dafad19900fff383c2790e017c958a1e92e84f7bb159a2a7136923b715a4c94f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.feodo",
+        "malware_printable":  "Feodo"
+    },
+    {
+        "ioc":  "acb23b92beb1de31d7175c94f94854887bc0b2adb90faddc89bf1b14b1bd1a4b",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.formbook",
+        "malware_printable":  "Formbook"
+    },
+    {
+        "ioc":  "4ffb89ed6560f1f1e8c683cd4451982c9588cf8ac2846f652ba88e611dc639bd",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "9f768bfae787aeed4ca09a7f95ea6d503338f8f1ed021fd9267e8c5c2560da56",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "ad74981909d69f775885e19a1040435e3b8afe73b4a1e5d35861d502bfed8da4",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "e2090baad30a864c76047b4edaa0950c535e53c677ce97cf6c9bc36da041dcac",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "4e808515782826070e63e04b3b8acc186faf434868d29a861bfd03ea93513b57",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "652f66e242972df9544e42473569ca7ce8103756470e0a5a1d4d6e60dfe0e51d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "b6ae29d9de7ee942b90bcd5c4ff97fe7ee6510900ca9f86bd560f86d47e35f1f",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "296305439740ab42ea0b706bdf4f7cd37c5a65187e2ab6141d46967f60f2f8ad",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "18851c5ea81a956ba94aa1df173349b05bb45865fe09bec6bf7e069ce6100f2e",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.dcrat",
+        "malware_printable":  "DCRat"
+    },
+    {
+        "ioc":  "e35d3e27246802dedb9608a7a8bacf385282e66601b8a80ce3c703a5c234f934",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.redline_stealer",
+        "malware_printable":  "RedLine Stealer"
+    },
+    {
+        "ioc":  "355c9f31d4f4cf6242a8bedf18d47dbcf2cf863abbe83acd6c8beb9e89e3aad2",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.feodo",
+        "malware_printable":  "Feodo"
+    },
+    {
+        "ioc":  "02518c4c83e48ed7cafe97c97a47141c8d1f10cad6eccb9a9567435b89b9dbce",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "cc3dce38fa384ae1f81a0ae1924c67eb7ab1210efe2bebfa02794bd590cc54a6",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "7725ee15f19a1b2739188353f536df117e832cb45432c56fa24f67a6ff1d163d",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "3933f8c0b1e616ee4f3839ceaaaddfd9567bd31bb6e8520aa692ecfa3ee45e49",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.amadey",
+        "malware_printable":  "Amadey"
+    },
+    {
+        "ioc":  "2a5fdf7ea9a3e0a075b2f6640789bcad24a756e9832c1f3b8531c09d2ad3c112",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.asyncrat",
+        "malware_printable":  "AsyncRAT"
+    },
+    {
+        "ioc":  "a16bac102cd51614f5629f28bac9ab867ed8bec0d37ee26904b78a4aaab82253",
+        "threat_type":  "payload",
+        "threat_type_desc":  "Indicator that identifies a malware sample (payload)",
+        "ioc_type":  "sha256_hash",
+        "ioc_type_desc":  "SHA256 hash of a malware sample (payload)",
+        "malware":  "win.stealc",
+        "malware_printable":  "Stealc"
+    },
+    {
+        "ioc":  "corretoralago.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "musicasdownload.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "mottaconstrutora.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "tigoveiculos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "aguiarsolucoesenergy.shop",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "pixelatedsinfactory.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "pharmachemstore.com",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "luzocomerciais.site",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "cargoacessoria.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "duartecomercio.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "uniaosistemasrj.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "rochaservicos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "lagunrepresentacoes.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "editoraramos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "admequipamentos.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "financasguaru.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "projetoretha.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "nobreengenharia.online",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "unknown",
+        "malware_printable":  "Unknown malware"
+    },
+    {
+        "ioc":  "https://thehyperfocus.quest/trade/d.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://thehyperfocus.quest/trade/fix.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://thehyperfocus.quest/trade/index.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "thehyperfocus.quest",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "domain",
+        "ioc_type_desc":  "Domain name that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://thehyperfocus.quest/trade/original.js",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "js.fakeupdates",
+        "malware_printable":  "FAKEUPDATES"
+    },
+    {
+        "ioc":  "https://downloadglobalproject.info/download.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.wikiloader",
+        "malware_printable":  "WikiLoader"
+    },
+    {
+        "ioc":  "https://globalvpnproject.info/wp-content/redirect.php",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.wikiloader",
+        "malware_printable":  "WikiLoader"
+    },
+    {
+        "ioc":  "https://globalvpnproject.info/?gad_source=1\u0026gclid=eaiaiqobchmi7mns9lteiamvzgctbh3mvrxxeaayaiaaegjbk_d_bwe",
+        "threat_type":  "payload_delivery",
+        "threat_type_desc":  "Indicator that identifies a malware distribution server (payload delivery)",
+        "ioc_type":  "url",
+        "ioc_type_desc":  "URL that delivers a malware payload",
+        "malware":  "win.wikiloader",
+        "malware_printable":  "WikiLoader"
+    }
+]

@@ -11,7 +11,7 @@ Henter IOC's for de seneste 7 dage fra ThreatFox API.
 Trækker de data ud som jeg ønsker og genere en ny Json fil som Uploader Json filen til et Azure blobstorage som jeg derefter kan bruge i min KQL
 
 KQL: 
-Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo
+Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo  hvor SHA256 forfindes 
 
 nyfull_sha256.json:
 Eks. på en Json fil

@@ -1,0 +1,31 @@
+// Definer den eksterne datakilde, der indeholder IOC-oplysninger i JSON-format
+let json_data = externaldata(
+    ioc: string, 
+    threat_type: string, 
+    threat_type_desc: string, 
+    ioc_type: string, 
+    ioc_type_desc: string, 
+    malware: int, 
+    malware_printable: string
+)
+[// Placeholder for the actual external data source path
+    @"" 
+]
+with (format="multijson")
+| project SHA256 = ioc, threat_type; // Vælg SHA256 og threat_type fra de importerede IOC-data
+
+// Query DeviceFileEvents for at finde filaktivitet, der matcher IOC SHA256 inden for de sidste 72 timer
+let file_activity = DeviceFileEvents
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256, threat_type) on SHA256
+| project DeviceName,InitiatingProcessAccountUpn, InitiatingProcessFileName, FileName, SHA256, FolderPath, ActionType, threat_type;
+
+// Query EmailAttachmentInfo for at finde e-mailvedhæftede filer, der matcher IOC SHA256 inden for de sidste 72 timer
+let email_attachments = EmailAttachmentInfo
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256, threat_type) on SHA256
+| project FileName,SHA256, threat_type,RecipientEmailAddress,SenderFromAddress;
+
+// Union resultaterne for at kombinere fil- og e-mailvedhæftningsfundene
+file_activity
+| union email_attachments
