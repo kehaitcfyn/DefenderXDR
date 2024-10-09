@@ -1,0 +1,2 @@
+# DefenderXDR
+DefenderXDR KQL mm.
