@@ -1,9 +1,9 @@
 # ThreatFox
 ThreatFox er en gratis online trusselsdatabase drevet af Abuse.ch, som specialiserer sig i at indsamle og dele indikatorer for kompromittering (IoCs) relateret til malware og cybertrusler. ThreatFox fokuserer på at give brugere adgang til IoCs såsom ondsindede domæner, IP-adresser, URL'er, og fil-hash-værdier, der er blevet associeret med skadelige aktiviteter såsom phishing, malware, og ransomware-kampagner.
 
-https://threatfox.abuse.ch/
+https://threatfox.abuse.ch/api/
 
-#Løsningen
+# Løsningen
 Min løsning går ud på at jagte filer og mails, hvor der forekommer en fil med en SHA256 værdi som ligger i ThreatFox database.
 
 PowerShell:
@@ -12,3 +12,6 @@ Trækker de data ud som jeg ønsker og genere en ny Json fil som Uploader Json f
 
 KQL: 
 Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo
+
+nyfull_sha256.json:
+Eks. på en Json fil
