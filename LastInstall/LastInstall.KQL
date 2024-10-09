@@ -1,0 +1,10 @@
+DeviceProcessEvents
+| where Timestamp >= ago(24h)  // Ser på de sidste 7 dage (juster periode efter behov)
+| where ProcessVersionInfoCompanyName != @"Microsoft Corporation"
+| where FolderPath !contains ("Adobe")
+| where FolderPath !contains ("C:\\Users\\")
+| where InitiatingProcessFileName has_any ("msiexec.exe", "setup.exe", "install.exe")  // Typiske installeringsprocesser
+| where InitiatingProcessAccountName != "system"
+| where isnotempty(InitiatingProcessAccountName)
+| project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, ProcessCommandLine, FolderPath
+| order by Timestamp desc

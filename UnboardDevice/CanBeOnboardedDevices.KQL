@@ -1,0 +1,30 @@
+// First Query: Can Be Onboarded devices
+let CanBeOnboardedDevices = 
+    DeviceInfo
+    | where Timestamp >= ago(24h) 
+   | where DeviceName !contains " xxx"  //change
+    | where OSPlatform !contains "macOS"
+    | where OSPlatform !contains "Linux"
+    | summarize arg_max(Timestamp, *) by DeviceName
+    | where OnboardingStatus == "Can be onboarded"
+    | sort by DeviceName asc;
+
+// Second Query: Device network info for a specific device
+let DeviceNetworkInfoDetails = 
+    DeviceInfo
+        | join kind=inner (
+        DeviceNetworkInfo
+        | summarize arg_max(Timestamp, *) by DeviceId
+            ) on DeviceId
+    | extend ConnectedNetworks_0_Name = parse_json(ConnectedNetworks)[0].Name
+    | extend IPAddresses_0_IPAddress = parse_json(IPAddresses)[0].IPAddress
+    | summarize arg_max(Timestamp, *) by DeviceName
+    | project DeviceName, ConnectedNetworks_0_Name, IPAddresses_0_IPAddress;
+
+// Join the two queries on DeviceName
+CanBeOnboardedDevices
+| join kind=inner (DeviceNetworkInfoDetails) on DeviceName
+| where IPAddresses_0_IPAddress !contains "10.19"
+| where IPAddresses_0_IPAddress !contains "10.20"
+| where IPAddresses_0_IPAddress !contains "10.4"
+| project DeviceName, ConnectedNetworks_0_Name, IPAddresses_0_IPAddress,Vendor,OSPlatform

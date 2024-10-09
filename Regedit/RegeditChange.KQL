@@ -1,0 +1,8 @@
+DeviceRegistryEvents
+| where Timestamp > ago(24h)
+| where RegistryKey has @"HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"
+| where RegistryValueName != @"CapaInstaller Info Center"
+| where RegistryValueName != @"CIGuardAgentGui"
+| where RegistryValueName != @"CiscoSpark"
+| where ActionType in ("RegistryValueSet", "RegistryKeyModified", "RegistryKeyCreated")
+| project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessAccountName, RegistryKey, RegistryValueName, RegistryValueData, ActionType

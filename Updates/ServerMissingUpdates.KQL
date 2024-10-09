@@ -1,0 +1,12 @@
+DeviceTvmSoftwareVulnerabilities
+| where OSPlatform contains "server"
+| where RecommendedSecurityUpdate contains "security updates"
+| where VulnerabilitySeverityLevel =="High"
+| where RecommendedSecurityUpdate == @"September 2024 Security Updates"
+| distinct DeviceName, OSPlatform, OSVersion
+| join kind=inner ( DeviceNetworkInfo ) on DeviceName
+| extend ConnectedNetworks_0_Name = parse_json(ConnectedNetworks)[0].Name
+    | extend IPAddresses_0_IPAddress = parse_json(IPAddresses)[0].IPAddress
+    | summarize arg_max(Timestamp, *) by DeviceId
+    | project DeviceName,NetworkAdapterVendor,IPAddresses_0_IPAddress, OSPlatform, OSVersion
+    | sort by DeviceName asc 
