@@ -2,7 +2,6 @@
 let CanBeOnboardedDevices = 
     DeviceInfo
     | where Timestamp >= ago(24h) 
-   | where DeviceName !contains " xxx"  //change
     | where OSPlatform !contains "macOS"
     | where OSPlatform !contains "Linux"
     | summarize arg_max(Timestamp, *) by DeviceName
@@ -24,7 +23,7 @@ let DeviceNetworkInfoDetails =
 // Join the two queries on DeviceName
 CanBeOnboardedDevices
 | join kind=inner (DeviceNetworkInfoDetails) on DeviceName
-| where IPAddresses_0_IPAddress !contains "10.19"
-| where IPAddresses_0_IPAddress !contains "10.20"
-| where IPAddresses_0_IPAddress !contains "10.4"
+| where IPAddresses_0_IPAddress !contains "x.x" // Change
+| where IPAddresses_0_IPAddress !contains "x.x" // Change
+| where IPAddresses_0_IPAddress !contains "x.x" // Change
 | project DeviceName, ConnectedNetworks_0_Name, IPAddresses_0_IPAddress,Vendor,OSPlatform
