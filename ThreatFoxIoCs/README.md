@@ -8,10 +8,10 @@ Min løsning går ud på at jagte filer og mails, hvor der forekommer en fil med
 
 PowerShell:
 Henter IOC's for de seneste 7 dage fra ThreatFox API.
-Trækker de data ud som jeg ønsker og genere en ny Json fil som Uploader Json filen til et Azure blobstorage som jeg derefter kan bruge i min KQL
+Trækker de data ud som jeg ønsker. Der generes en ny Json fil som Uploades til et Azure blobstorage som jeg derefter kan bruges i min KQL
 
 KQL: 
-Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo  hvor SHA256 forfindes 
+Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo hvor SHA256 dukker op 
 
 nyfull_sha256.json:
 Eks. på en Json fil

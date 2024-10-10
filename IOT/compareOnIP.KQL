@@ -1,0 +1,28 @@
+let Switche = externaldata(DeviceName: string,IPAddresses_0_IPAddress: string)
+[h"link til CSV file"
+]
+with(format='csv',ignorefirstrecord=true)
+| where IPAddresses_0_IPAddress != "IPAddresses_0_IPAddress"
+| project DeviceName, IPAddresses_0_IPAddress
+;
+
+let IotSwitche = DeviceInfo
+| where Timestamp >= ago(24h) 
+| where DeviceType contains "NetworkDevice"
+| where DeviceSubtype contains "Switch" or DeviceSubtype contains "Router"
+| where ExclusionReason != "DuplicateDevice"
+| summarize arg_max(Timestamp, *) by DeviceId
+| join kind=inner (DeviceNetworkInfo) on DeviceId
+| extend ConnectedNetworks_0_Name = parse_json(ConnectedNetworks)[0].Name
+| extend IPAddresses_0_IPAddress = tostring(parse_json(IPAddresses)[0].IPAddress)  // Cast IP to string
+| summarize arg_max(Timestamp, *) by DeviceId
+//| where IPAddresses contains "x.x.x.x."
+| where IPAddresses_0_IPAddress !endswith_cs "255"
+| project DeviceName, IPAddresses_0_IPAddress, IPAddresses
+| sort by DeviceName asc;
+
+Switche
+| extend IPAddresses_0_IPAddress = tostring(IPAddresses_0_IPAddress)  // Cast IP to string in Switche
+| join kind= leftanti   (IotSwitche | extend IPAddresses_0_IPAddress = tostring(IPAddresses_0_IPAddress)) 
+    on IPAddresses_0_IPAddress
+| sort by DeviceName asc 
