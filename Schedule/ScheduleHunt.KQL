@@ -1,0 +1,34 @@
+//title: Scheduled tasks names used by SVR for GraphicalProton backdoor
+//description: Hunts for known SVR-specific scheduled task names
+//https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-347a
+
+DeviceProcessEvents
+| where FileName endswith "schtasks.exe"
+| where (ProcessCommandLine contains "IISUpdateService" 
+    or ProcessCommandLine contains "WindowsDefenderService"
+    or ProcessCommandLine contains "WindowsDefenderService2"
+    or ProcessCommandLine contains "DefenderService"
+    or ProcessCommandLine contains "DefenderUPDService"
+    or ProcessCommandLine contains "WiMSDFS"
+    or ProcessCommandLine contains "StartupAppTaskCkeck"
+    or ProcessCommandLine contains "SubmitReporting"
+    or ProcessCommandLine contains "Defender Update Service"
+    or ProcessCommandLine contains "WindowUpdate"
+    or ProcessCommandLine contains "CheckReporting"
+    or ProcessCommandLine contains "StartupAppTaskCheck"
+    or ProcessCommandLine contains "SpeechModelInstallTask"
+    or ProcessCommandLine contains "BfeOnServiceStart"
+    or ProcessCommandLine contains "Data Integrity Update"
+    or ProcessCommandLine contains "Scheduled AutoCheck"
+    or ProcessCommandLine contains "ATPUpd"
+    or ProcessCommandLine contains "Service Update"
+    or ProcessCommandLine contains "Scheduled Check"
+    or ProcessCommandLine contains "Scheduled AutoCheck"
+    or ProcessCommandLine contains "Defender"
+    or ProcessCommandLine contains "defender")
+   or (ProcessCommandLine matches regex @".*Defender\sUpdate\sService.*"
+    or ProcessCommandLine matches regex @".*Data\sIntegrity\sUpdate.*"
+    or ProcessCommandLine matches regex @".*Scheduled\sAutoCheck.*"
+    or ProcessCommandLine matches regex @".*Service\sUpdate.*"
+    or ProcessCommandLine matches regex @".*Scheduled\sCheck.*"
+    or ProcessCommandLine matches regex @".*Scheduled\sAutoCheck.*")
