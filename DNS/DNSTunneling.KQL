@@ -1,0 +1,12 @@
+// DNS tunneling use either A records or TXT records for an infected host to receive data
+// To exfiltrate data to a C2 server, the DNS queries for infected host will spike with long queried hostname
+
+let DNSHostnameLengthCheck = 40;
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType == @"DnsQueryResponse"
+| extend DNSHostQuery = tostring(parse_json(AdditionalFields).DnsQueryString)
+| where strlen(DNSHostQuery) > DNSHostnameLengthCheck
+| summarize DNSQueriedHost=dcount(DNSHostQuery) by DeviceName
+| sort by DNSQueriedHost desc
+

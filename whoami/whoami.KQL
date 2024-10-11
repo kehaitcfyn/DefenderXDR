@@ -1,0 +1,3 @@
+DeviceProcessEvents
+| where FileName endswith "whoami.exe"
+| where ProcessCommandLine contains "priv" or ProcessCommandLine contains "PRIV"

@@ -1,0 +1,5 @@
+DeviceProcessEvents
+| where FileName endswith "reg.exe"
+| where ProcessCommandLine contains "save"
+| where ProcessCommandLine matches regex @".*HKLM\\SYSTEM.*|.*HKLM\\SECURITY.*|.*HKLM\\SAM.*"
+| where ProcessCommandLine matches regex @".*sy\.sa.*|.*sam\.sa.*|.*se\.sa.*"

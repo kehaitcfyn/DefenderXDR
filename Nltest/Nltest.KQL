@@ -1,0 +1,3 @@
+DeviceProcessEvents
+| where FileName endswith "nltest.exe"
+| where ProcessCommandLine matches regex @".*dclist\:.*|.*DCLIST\:.*|.*dsgetdc\:.*|.*DSGETDC\:.*"
