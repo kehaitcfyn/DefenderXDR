@@ -1,0 +1,7 @@
+DeviceFileEvents
+| where ActionType == "FileCreated" and FileName endswith ".reg"
+| join (DeviceProcessEvents
+   | where FileName == @"regedit.exe"
+    ) on DeviceId
+| project Timestamp, DeviceName, ExtractedFileName = FileName, InitiatingProcessFileName,FolderPath,InitiatingProcessAccountUpn
+| order by Timestamp desc
