@@ -1,0 +1,5 @@
+DeviceNetworkEvents
+| where RemoteUrl endswith ".exe"
+| where InitiatingProcessFileName matches regex @"(FPSpy|KLogEXE)"
+| project Timestamp, DeviceName, RemoteIP, RemoteUrl, InitiatingProcessFileName
+| order by Timestamp desc

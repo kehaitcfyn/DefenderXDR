@@ -1,0 +1,8 @@
+DeviceFileEvents
+| where ActionType == "FileExtracted" and FileName endswith ".zip"
+| join (DeviceProcessEvents
+    | where FileName endswith ".exe"
+    ) on DeviceId
+| project Timestamp, DeviceName, ExtractedFileName = FileName, InitiatingProcessFileName
+| order by Timestamp desc
+  

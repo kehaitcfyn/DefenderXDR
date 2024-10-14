@@ -1,0 +1,4 @@
+DeviceProcessEvents
+| where FileName matches regex @"(KLogEXE|FPSpy|InfoKey|KGH_SPY)"
+| project Timestamp, DeviceName, FileName, InitiatingProcessFileName, AccountName
+| order by Timestamp desc
