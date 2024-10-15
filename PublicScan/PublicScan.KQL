@@ -1,0 +1,11 @@
+DeviceNetworkEvents
+| where Timestamp >= ago(48h)
+// Filter on devices that have been scanned
+| where ActionType == "InboundInternetScanInspected"
+| extend AdditionalFieldsDynamic = todynamic(AdditionalFields)
+// Extract all additionalfields
+| evaluate bag_unpack(AdditionalFieldsDynamic)
+| project Timestamp, DeviceName, PublicScannedIp, PublicScannedPort,LocalIP
+// Count the number of scans per device
+| summarize ScanCount = count() by DeviceName, PublicScannedIp, PublicScannedPort,LocalIP
+| order by ScanCount desc

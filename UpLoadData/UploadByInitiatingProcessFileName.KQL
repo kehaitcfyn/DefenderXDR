@@ -1,7 +1,9 @@
 DeviceNetworkEvents
 | where ActionType == "ConnectionSuccess" and RemoteUrl != ""
-| where Timestamp >= ago(24h)  // Dette filtrerer data fra de sidste 7 dage
-| summarize TotalDataUploaded = sum(InitiatingProcessFileSize) by InitiatingProcessFileName
+| where Timestamp >= ago(48h)  // Dette filtrerer data fra de sidste 7 dage
+| where RemoteUrl !contains "download"
+| summarize TotalDataUploaded = sum(InitiatingProcessFileSize) by InitiatingProcessFileName,LocalIP
 | extend TotalUploadGB  = TotalDataUploaded / (1024 * 1024 * 1024)
 | where TotalDataUploaded  > 25 * 1024 * 1024 * 1024  // 25 GB in bytes
 | order by TotalDataUploaded desc
+
