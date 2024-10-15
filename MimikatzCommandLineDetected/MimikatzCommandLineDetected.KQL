@@ -1,0 +1,9 @@
+DeviceProcessEvents
+| where ProcessCommandLine has_any (
+    "DumpCreds", "mimikatz", "::aadcookie", "::detours", "::memssp", 
+    "::mflt", "::ncroutemon", "::ngcsign", "::printnightmare", "::skeleton", 
+    "::preshutdown", "::mstsc", "::multirdp", "rpc::", "token::", "crypto::", 
+    "dpapi::", "sekurlsa::", "kerberos::", "lsadump::", "privilege::", "process::", 
+    "vault::", "crypto::", "misc::", "event::", "IIS::AppHost", "net::", "sid::", 
+    "standard::", "vault::"
+)

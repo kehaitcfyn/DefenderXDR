@@ -1,0 +1,7 @@
+DeviceProcessEvents
+| where Timestamp >= ago(2h) 
+| where InitiatingProcessVersionInfoInternalFileName != @"SenseIR.exe"
+| where FileName has_any ("powershell.exe", "pwsh.exe", "powershell_ise.exe","WindowsTerminal.exe")
+| sort by Timestamp desc  
+
+

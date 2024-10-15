@@ -2,9 +2,11 @@ DeviceNetworkEvents
 | where Timestamp >= ago(3d)
 | where RemoteIP  !contains "127.0.0.1"
 | where ActionType == "ConnectionSuccess" and (RemoteUrl has "upload" or InitiatingProcessFileName has "browser" or InitiatingProcessFileName == "powershell.exe")
-| summarize TotalUploadBytes = sum(InitiatingProcessFileSize) by InitiatingProcessAccountUpn,RemoteUrl,InitiatingProcessFileName,InitiatingProcessParentFileName,DeviceName,Timestamp
-| extend TotalUploadMG = TotalUploadBytes / (1024 * 1024 )
+| summarize TotalDataTransferred = sum(InitiatingProcessFileSize) by InitiatingProcessAccountUpn,RemoteUrl,InitiatingProcessFileName,InitiatingProcessParentFileName,DeviceName,Timestamp,DeviceId,ReportId
+| extend TotalUploadMG  = TotalDataTransferred / (1024 * 1024 )
 | where RemoteUrl  !contains "measure.office.com"
-| project InitiatingProcessAccountUpn, TotalUploadMG,Timestamp,RemoteUrl,InitiatingProcessParentFileName
-| top 25 by TotalUploadMG
+| project InitiatingProcessAccountUpn, TotalUploadMG,TotalDataTransferred,Timestamp,RemoteUrl,InitiatingProcessParentFileName,DeviceId,ReportId
+//| where TotalDataTransferred > 10 * 1024 * 1024 * 1024  // 10 GB in bytes
+| where TotalDataTransferred > 50 * 1024 * 1024   // 50MG in bytes
 | sort by TotalUploadMG desc
+
