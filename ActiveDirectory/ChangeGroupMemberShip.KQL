@@ -1,0 +1,4 @@
+IdentityDirectoryEvents
+| where Application == "Active Directory"
+| where ActionType == "Group Membership changed"
+| project Timestamp, ActionType, TargetAccountDisplayName, TargetAccountUpn, DestinationDeviceName, AccountName, AccountDomain, AdditionalFields

@@ -1,0 +1,25 @@
+// Første kørsel - Sårbarheder på enheder
+let vulnerable_devices = DeviceTvmSoftwareVulnerabilities
+| where OSPlatform !contains "server"
+| where RecommendedSecurityUpdate contains "security updates"
+| where VulnerabilitySeverityLevel == "High"
+| where RecommendedSecurityUpdate != "October 2024 Security Updates"
+| where RecommendedSecurityUpdate != "September 2024 Security Updates"
+| where RecommendedSecurityUpdate !has "Last updated at"
+| distinct DeviceName;
+
+// Anden kørsel - Logon og identity information
+let latest_logon_events = DeviceLogonEvents
+| summarize arg_max(Timestamp, *) by DeviceName, AccountName;
+
+let latest_identity_info = IdentityInfo
+| summarize arg_max(Timestamp, *) by AccountName;
+
+let logon_identity_info = latest_logon_events
+| join kind=inner (latest_identity_info) on AccountName
+| project AccountName, DeviceName, AccountUpn, AccountDisplayName, DistinguishedName;
+
+// Kombiner resultater med leftouter join for at inkludere alle enheder
+vulnerable_devices
+| join kind=leftouter (logon_identity_info) on DeviceName
+| project DeviceName, AccountName, AccountUpn, AccountDisplayName, DistinguishedName

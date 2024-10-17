@@ -1,0 +1,4 @@
+IdentityDirectoryEvents
+| where ActionType == @"PowerShell execution"
+| extend Command = todynamic(AdditionalFields)["PowerShell execution"]
+| project Timestamp, ActionType, DeviceName, IPAddress, DestinationDeviceName, AccountName, AccountDomain, Command

@@ -1,0 +1,7 @@
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType == @"FirewallInboundConnectionBlocked"
+| summarize TargetDevice=dcount(DeviceName), TargetPort=dcount(LocalPort) by RemoteIP
+| where TargetDevice > 20
+| where TargetPort > 10
+| sort by TargetDevice, TargetPort desc 

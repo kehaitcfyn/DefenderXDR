@@ -1,0 +1,5 @@
+IdentityQueryEvents
+| where Timestamp >= ago(48h) 
+| where ActionType == "LDAP query"
+| summarize LDAPQueryCount = count() by DeviceName,Query,DestinationDeviceName
+| order by LDAPQueryCount desc

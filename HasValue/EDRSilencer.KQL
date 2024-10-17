@@ -1,0 +1,24 @@
+//hunter EDRSilencer Iocs 721af117726af1385c08cc6f49a801f3cf3f057d9fd26fcec2749455567888e7
+
+let json_data = datatable(SHA256: string)
+[
+
+    "721af117726af1385c08cc6f49a801f3cf3f057d9fd26fcec2749455567888e7"  //  EDRSilencer
+  
+];
+
+// Query DeviceFileEvents for at finde filaktivitet, der matcher IOC SHA256 inden for de sidste 24 timer
+let file_activity = DeviceFileEvents
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256) on SHA256
+| project DeviceName,InitiatingProcessAccountUpn, InitiatingProcessFileName, FileName, SHA256, FolderPath, ActionType;
+
+// Query EmailAttachmentInfo for at finde e-mailvedhæftede filer, der matcher IOC SHA256 inden for de sidste 24 timer
+let email_attachments = EmailAttachmentInfo
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256) on SHA256
+| project FileName,SHA256,RecipientEmailAddress,SenderFromAddress;
+
+// Union resultaterne for at kombinere fil- og e-mailvedhæftningsfundene
+file_activity
+| union email_attachments

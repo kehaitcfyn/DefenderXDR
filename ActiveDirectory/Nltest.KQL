@@ -1,0 +1,7 @@
+DeviceProcessEvents
+| where Timestamp >= ago(24h) 
+| where FileName has "nltest.exe"
+| extend ParsedCommandLine = tolower(parse_command_line(ProcessCommandLine, "windows")[1])
+| where ProcessCommandLine matches regex @".*dclist\:.*|.*DCLIST\:.*|.*dsgetdc\:.*|.*DSGETDC\:.*"
+| project Timestamp,DeviceName,ProcessCommandLine,FileName,ParsedCommandLine 
+

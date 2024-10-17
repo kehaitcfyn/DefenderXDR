@@ -1,0 +1,5 @@
+IdentityLogonEvents
+| where Protocol == @"Kerberos"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project Timestamp, ActionType, DeviceName, IPAddress, DestinationDeviceName, AccountName, AccountDomain, EncryptionType = tostring(ParsedFields.EncryptionType)
+| where EncryptionType == @"Rc4Hmac"

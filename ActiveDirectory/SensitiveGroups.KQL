@@ -1,0 +1,31 @@
+let SensitiveGroupName = pack_array(  // Declare Sensitive Group names. Add any groups that you manually tagged as sensitive
+    'Account Operators',
+    'Administrators',
+    'Domain Admins', 
+    'Backup Operators',
+    'Domain Controllers',
+    'Enterprise Admins',
+    'Enterprise Read-only Domain Controllers',
+    'Group Policy Creator Owners',
+    'Incoming Forest Trust Builders',
+    'Microsoft Exchange Servers',
+    'Network Configuration Operators',
+    'Microsoft Exchange Servers',
+    'Print Operators',
+    'Read-only Domain Controllers',
+    'Replicator',
+    'Schema Admins',
+    'Server Operators'
+);
+IdentityDirectoryEvents
+| where Application == "Active Directory"
+| where ActionType == "Group Membership changed"
+| where DestinationDeviceName != "" // Exclude activites coming AD Sync changes. 
+| extend ToGroup = tostring(parse_json(AdditionalFields).["TO.GROUP"]) // Extracts the group name if action is add enity to a group.
+| extend FromGroup = tostring(parse_json(AdditionalFields).["FROM.GROUP"]) // etracts the group name if action is remove entity from a group.
+| extend Action = iff(isempty(ToGroup), "Remove", "Add") // calculates if the action is Remove or Add
+| extend GroupModified = iff(isempty(ToGroup), FromGroup, ToGroup) // group name that the action was taken on
+| extend Target_Group = tostring(parse_json(AdditionalFields).["TARGET_OBJECT.GROUP"])
+| where GroupModified in~ (SensitiveGroupName)
+| project Timestamp, Action, GroupModified,  Target_Account = TargetAccountDisplayName, Target_UPN = TargetAccountUpn, Target_Group,  DC=DestinationDeviceName, Actor=AccountName, ActorDomain=AccountDomain, AdditionalFields
+| sort by Timestamp desc
