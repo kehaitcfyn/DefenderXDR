@@ -1,0 +1,33 @@
+// Json filen indeholder kun Hasværdier på exe filer, hvis ønsket er at se andre extension som xls, zip, doc mm. ændres det Powershelscriptet.
+
+// Definer den eksterne datakilde, der indeholder IOC-oplysninger i JSON-format
+
+let json_data = externaldata(
+    sha256_hash : string, 
+    first_seen: string, 
+    file_name : string, 
+    file_type_mime: string, 
+    magika: string, 
+   
+)
+[// Placeholder for the actual external data source path
+    @"" 
+]
+with (format="multijson")
+| project SHA256 =sha256_hash,threat_type=file_name;
+
+// Query DeviceFileEvents for at finde filaktivitet, der matcher IOC SHA256 inden for de sidste 24 timer
+let file_activity = DeviceFileEvents
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256, threat_type) on SHA256
+| project DeviceName,InitiatingProcessAccountUpn, InitiatingProcessFileName, FileName, SHA256, FolderPath, ActionType, threat_type;
+
+// Query EmailAttachmentInfo for at finde e-mailvedhæftede filer, der matcher IOC SHA256 inden for de sidste 24 timer
+let email_attachments = EmailAttachmentInfo
+| where Timestamp > ago(72h)
+| join kind=inner (json_data | project SHA256, threat_type) on SHA256
+| project FileName,SHA256, threat_type,RecipientEmailAddress,SenderFromAddress;
+
+// Union resultaterne for at kombinere fil- og e-mailvedhæftningsfundene
+file_activity
+| union email_attachments
