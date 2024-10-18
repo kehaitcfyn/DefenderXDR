@@ -15,3 +15,7 @@ Laver søgningen på DeviceFileEvents  samt EmailAttachmentInfo hvor SHA256 dukk
 
 nyfull_sha256.json:
 Eks. på en Json fil
+
+
+# Har designet en bedre løsning som er baseret på https://bazaar.abuse.ch/  databasen
+https://github.com/kehaitcfyn/DefenderXDR/tree/main/bazaar.abuse.ch
