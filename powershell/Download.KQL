@@ -1,0 +1,5 @@
+DeviceProcessEvents
+| where FileName == "powershell.exe" or FileName == "pwsh.exe"
+| where ProcessCommandLine has "Invoke-WebRequest" or ProcessCommandLine has "Invoke-RestMethod" or ProcessCommandLine has "wget"
+| project Timestamp, DeviceName, InitiatingProcessAccountName, FileName, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
+| order by Timestamp desc

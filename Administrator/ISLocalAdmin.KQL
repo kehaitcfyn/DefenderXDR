@@ -1,0 +1,18 @@
+let AccountTable = datatable(AccountName:string)
+[
+  'e0001',
+  'j0001',
+  
+];
+
+DeviceLogonEvents 
+| where Timestamp > ago(30d)
+| where AccountDomain == @"xxxx"
+| where IsLocalAdmin =="1"
+| where AccountName !startswith "lenovo" 
+| where AccountName !endswith "xx"
+| join kind=leftanti AccountTable on AccountName
+| extend _IsLocalLogon = parse_json(AdditionalFields).IsLocalLogon
+|  summarize arg_max(Timestamp, *) by DeviceName
+| project DeviceName,Timestamp,AccountDomain,AccountName,IsLocalAdmin,LogonType,_IsLocalLogon 
+| sort by Timestamp

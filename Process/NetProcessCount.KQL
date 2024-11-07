@@ -1,0 +1,17 @@
+// Hent processer, der er set i de sidste 3 timer
+let RecentProcesses = DeviceProcessEvents
+| where FileName !endswith "tmp"
+| where Timestamp between (ago(3h) .. now())
+| summarize by FileName, DeviceName,ProcessVersionInfoProductName,SHA256;
+
+// Hent processer, der er set tidligere (f.eks. de sidste 30 dage)
+let HistoricalProcesses = DeviceProcessEvents
+| where FileName !endswith "tmp"
+| where Timestamp < ago(3h)
+| summarize by FileName, DeviceName,ProcessVersionInfoProductName,SHA256;
+
+// Find processer, som kun er set inden for de sidste 3 timer og ikke tidligere
+RecentProcesses
+| join kind=leftanti HistoricalProcesses on FileName
+| summarize CountOfNewProcesses = count() by FileName,ProcessVersionInfoProductName,SHA256
+| order by CountOfNewProcesses desc

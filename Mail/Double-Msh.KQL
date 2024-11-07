@@ -1,0 +1,7 @@
+EmailEvents
+| extend SenderEmailLength=strlen(SenderFromAddress)
+| where SenderEmailLength > 200
+| where AttachmentCount == "1"
+| where EmailDirection == "Inbound" and DeliveryAction != "Blocked"
+| join EmailAttachmentInfo on NetworkMessageId
+| where FileType == "html"

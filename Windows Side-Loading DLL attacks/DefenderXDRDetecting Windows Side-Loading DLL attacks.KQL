@@ -1,0 +1,10 @@
+let DLLLoaded =
+DeviceEvents
+| where Timestamp > ago(1h)
+| where ActionType == @"DriverLoad"
+| where FileName endswith ".dll"
+| distinct FileName;
+DeviceRegistryEvents
+| where ActionType == @"RegistryKeyCreated" or ActionType == @"RegistryValueSet"
+| where RegistryKey has_any(DLLLoaded)
+

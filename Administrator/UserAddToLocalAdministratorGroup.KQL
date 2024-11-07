@@ -1,0 +1,28 @@
+let ADAZUsers =  IdentityInfo 
+| extend DirectoryDomain = AccountDomain 
+| extend DirectoryAccount = AccountName 
+| distinct DirectoryDomain , DirectoryAccount , OnPremSid , CloudSid, AccountUpn, GivenName, Surname;
+ // check for any new created or modified local accounts 
+let NewUsers =  DeviceEvents
+| where ActionType contains "UserAccountCreated"  // or ActionType contains "UserAccountModified"
+| extend lUserAdded = AccountName
+| extend NewUserSID = AccountSid
+| extend laccountdomain = AccountDomain
+| distinct NewUserSID, lUserAdded,laccountdomain;
+// Check for any local group changes and enrich the data with the account name obtained from the previous query
+DeviceEvents 
+| where ActionType == 'UserAccountAddedToLocalGroup' 
+| extend AddedAccountSID = tostring(parse_json(AdditionalFields).MemberSid)
+| extend LocalGroup = AccountName
+| extend LocalGroupSID = AccountSid
+| extend Actor = trim(@"[^\w]+",InitiatingProcessAccountName)
+| join kind= leftouter    (NewUsers)
+on $left.AccountSid == $right.NewUserSID
+| project Timestamp, DeviceName, LocalGroup,LocalGroupSID, AccountSid, lUserAdded , Actor, ActionType , laccountdomain 
+// limit to local administrators group
+// | where LocalGroupSID contains "S-1-5-32-544"
+| join kind= leftouter        (ADAZUsers)
+on $left.AccountSid == $right.OnPremSid
+| extend UserAdded = iff(isnotempty(lUserAdded),strcat(laccountdomain,"\\", lUserAdded), strcat(DirectoryDomain,"\\", DirectoryAccount))
+| project Timestamp, DeviceName, LocalGroup,LocalGroupSID, AccountSid, UserAdded , Actor, ActionType  
+| where DeviceName !contains Actor 

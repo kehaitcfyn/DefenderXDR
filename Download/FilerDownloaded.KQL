@@ -1,0 +1,13 @@
+// Lists all the files downloaded using popular browsers.
+DeviceFileEvents 
+| where Timestamp > ago(3h)
+| where ActionType =="FileCreated"
+| where FolderPath !has "$Recycle.Bin"
+| where InitiatingProcessFolderPath contains "msedge.exe"
+or InitiatingProcessFolderPath contains "iexplore.exe"
+or InitiatingProcessFolderPath contains "chrome.exe"
+or InitiatingProcessFolderPath contains "firefox.exe"
+| where FileName contains ".zip" 
+or FileName contains ".ps1"
+or FileName contains ".exe"
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, FolderPath,InitiatingProcessAccountUpn,ActionType

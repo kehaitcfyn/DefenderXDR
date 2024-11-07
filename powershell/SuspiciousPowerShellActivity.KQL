@@ -1,0 +1,6 @@
+DeviceProcessEvents
+| where Timestamp >= ago(24h)
+| where FileName == "powershell.exe" or FileName == "pwsh.exe"
+| where ProcessCommandLine has "-enc" or ProcessCommandLine has "IEX" or ProcessCommandLine has "Invoke-Expression"
+| project Timestamp, DeviceName, InitiatingProcessAccountName, FileName, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
+| order by Timestamp desc

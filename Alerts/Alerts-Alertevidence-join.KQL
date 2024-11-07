@@ -1,0 +1,10 @@
+let Alerts = AlertInfo
+| where Timestamp > ago(24h)
+| where DetectionSource== "Antivirus"  or DetectionSource== "EDR" or DetectionSource contains "XDR" or DetectionSource contains "SmartScreen";
+let AlertE = AlertEvidence ;
+Alerts
+|join kind= inner AlertE on AlertId
+| summarize arg_max(Timestamp, *) by AlertId
+| extend AdditionalFields_Account_UserPrincipalName = parse_json(AdditionalFields).Account.UserPrincipalName
+| extend AdditionalFields_ImageFile_Host_HostName = parse_json(AdditionalFields).ImageFile.Host.HostName
+

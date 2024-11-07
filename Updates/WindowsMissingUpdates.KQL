@@ -1,0 +1,9 @@
+DeviceTvmSoftwareVulnerabilities
+| where OSPlatform !contains "server"
+| where RecommendedSecurityUpdate contains "security updates" 
+| where VulnerabilitySeverityLevel =="High"
+| where RecommendedSecurityUpdate != "October 2024 Security Updates"
+//| where RecommendedSecurityUpdate != "September 2024 Security Updates"
+| where RecommendedSecurityUpdate !has "Last updated at" 
+|summarize by DeviceName,RecommendedSecurityUpdate,SoftwareName
+| sort by RecommendedSecurityUpdate asc 

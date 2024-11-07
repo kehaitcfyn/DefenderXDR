@@ -1,0 +1,28 @@
+let fileNames = dynamic([
+"PostalScanImporter.exe",
+"win.exe",
+"name.dll",
+"248.dll",
+"cs240.dll",
+"fel.ocx",
+"theme.ocx",
+"hana.ocx",
+"obfs.ps1",
+"recon.ps1"]);
+let fileHashes = dynamic([
+   "efb2f6452d7b0a63f6f2f4d8db49433259249df598391dd79f64df1ee3880a8d",
+   "a9aeb861817f3e4e74134622cbe298909e28d0fcc1e72f179a32adc637293a40",
+   "caa21a8f13a0b77ff5808ad7725ff3af9b74ce5b67426c84538b8fa43820a031",
+   "53e2dec3e16a0ff000a8c8c279eeeca8b4437edb8ec8462bfbd9f64ded8072d9",
+   "827f7178802b2e92988d7cff349648f334bc86317b0b628f4bb9264285fccf5f",
+   "ee80f3e3ad43a283cbc83992e235e4c1b03ff3437c880be02ab1d15d92a8348a",
+   "de09ec092b11a1396613846f6b082e1e1ee16ea270c895ec6e4f553a13716304",
+   "d065623a7d943c6e5a20ca9667aa3c41e639e153600e26ca0af5d7c643384670",
+   "c08dd490860b54ae20fa9090274da9ffa1ba163f00d1e462e913cf8c68c11ac1"
+   
+]);
+
+DeviceFileEvents
+| where Timestamp > ago(24h)
+| where FileName in (fileNames) or SHA256 in (fileHashes)
+| project DeviceName, InitiatingProcessFileName, FileName, SHA256, FolderPath, ActionType
