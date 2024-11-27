@@ -1,25 +1,34 @@
-// Første kørsel - Sårbarheder på enheder
-let vulnerable_devices = DeviceTvmSoftwareVulnerabilities
-| where OSPlatform !contains "server"
-| where RecommendedSecurityUpdate contains "security updates"
-| where VulnerabilitySeverityLevel == "High"
-| where RecommendedSecurityUpdate != "October 2024 Security Updates"
-| where RecommendedSecurityUpdate != "September 2024 Security Updates"
-| where RecommendedSecurityUpdate !has "Last updated at"
-| distinct DeviceName;
-
-// Anden kørsel - Logon og identity information
+// Første del: Henter de nyeste logon events og identity info
 let latest_logon_events = DeviceLogonEvents
-| summarize arg_max(Timestamp, *) by DeviceName, AccountName;
+| where Timestamp > ago(30d)
+    | summarize arg_max(Timestamp, *) by DeviceName, AccountName;
 
 let latest_identity_info = IdentityInfo
-| summarize arg_max(Timestamp, *) by AccountName;
+| where Timestamp > ago(30d)
+    //| where AccountDomain != @"xxxxx"
+    | summarize arg_max(Timestamp, *) by AccountName;
 
-let logon_identity_info = latest_logon_events
-| join kind=inner (latest_identity_info) on AccountName
-| project AccountName, DeviceName, AccountUpn, AccountDisplayName, DistinguishedName;
+// Kombinerer logon events og identity info på AccountName
+let latest_logon_info = latest_logon_events
+    | join kind=inner (latest_identity_info) on AccountName
+    | project AccountName, DeviceName, AccountUpn, AccountDisplayName, DistinguishedName;
 
-// Kombiner resultater med leftouter join for at inkludere alle enheder
-vulnerable_devices
-| join kind=leftouter (logon_identity_info) on DeviceName
-| project DeviceName, AccountName, AccountUpn, AccountDisplayName, DistinguishedName
+// Anden del: Henter høj-severitetssårbarheder, filtreret efter kriterier
+let high_severity_vulns = DeviceTvmSoftwareVulnerabilities
+    | where OSPlatform !contains "server"
+    | where RecommendedSecurityUpdate contains "security updates"
+    | where VulnerabilitySeverityLevel == "High"
+    | where RecommendedSecurityUpdate !has "Last updated at"
+    | where RecommendedSecurityUpdate !has "November 2024 Security Updates"
+    | distinct DeviceName;
+
+// Inner join af de to datasæt på DeviceName
+let vulns = latest_logon_info
+| join kind=inner (high_severity_vulns) on DeviceName
+| project AccountName, DeviceName, AccountUpn;
+
+vulns
+| where isnotempty(AccountUpn)
+| where AccountUpn !contains "onmicrosoft.com"
+| distinct DeviceName,AccountName,AccountUpn
+
